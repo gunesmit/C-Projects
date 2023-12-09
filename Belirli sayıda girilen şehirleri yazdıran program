@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+
+	char sehir[3][15];
+	int i;
+	
+	for(i=1;i<=3;i++)
+	{
+	
+	printf("Sehir Giriniz: \n",i+1);
+	scanf("%s",sehir[i]);
+}
+	
+	for(i=1;i<=3;i++)
+	{
+		printf("Girdiginiz Il: %s\n", sehir[i]);
+		
+		
+	}
+	
+	
+	return 0;
+}
