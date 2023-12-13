@@ -4,26 +4,25 @@
 
 int main() {
 	
-	int dizi[100];
-	int i,sayi;
-	int toplam=0;
-	int ort=0;
+	int i,sayi,dizi[100];
+	int toplam=0,ort=0;
+
 	
 	printf("Eleman Sayisi: ");
 	scanf("%d",&sayi);
 	
 	for(i=0;i<sayi;i++)
 	{
-	  printf("Dizinin %d. degerini girin:  ",i+1);
-	  scanf("%d",&dizi[i]);
+		printf("Dizinin %d. degerini girin:  ",i+1);
+		scanf("%d",&dizi[i]);
 	}
 
-  printf("\n\n");
+  	printf("\n\n");
     
-  for(i=0;i<sayi;i++)
-  {
-    toplam=toplam+dizi[i];
-    ort=toplam/sayi;
+  	for(i=0;i<sayi;i++)
+  	{
+   		 toplam=toplam+dizi[i];
+    		ort=toplam/sayi;
 	}
 	
 	printf("Dizideki elemanlarin toplami: %d\n",toplam);
