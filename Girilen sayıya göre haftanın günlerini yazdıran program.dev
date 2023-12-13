@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-	
+int main() {
+
 	 int sayi;
 	 
 	 printf("Bir sayi giriniz: ");
@@ -17,7 +18,6 @@
 	 	case 6:printf("Cumartesi"); break;
 	 	case 7:printf("Pazar"); break;
 	 	default:printf("1 ile 7 arasinda bir sayi girdiginizden emin olunuz"); break;
-	 	
 	 }
 	 
 	
