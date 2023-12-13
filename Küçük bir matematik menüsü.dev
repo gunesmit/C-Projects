@@ -1,62 +1,51 @@
-[Project]
-FileName=Ders 16.dev
-Name=Ders 16
-Type=1
-Ver=2
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=0
-Icon=
-ExeOutput=
-ObjectOutput=
-LogOutput=
-LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-UseCustomMakefile=0
-CustomMakefile=
-CommandLine=
-Folders=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0000000000000000000000000
-UnitCount=1
+#include <stdio.h>
+#include <stdlib.h>
 
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
 
-[Unit1]
-FileName=main7.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
+int main() {
+	
+	int sayi1,sayi2,sonuc,secim,girdi,pi;
+	
+	sayi1=12;
+	sayi2=16;
+	pi=3,14;
+	
+	printf("Matematik Menusu\n");
+	printf("*****************\n\n");
+	printf("1-Karede alan ve cevre hesabi\n");
+	printf("2-Girilen sayinin kupu\n");
+	printf("3-Cemberde alan ve cevre hesabi\n");
+	printf("4-5x2+7x+9 x'e gore islemin sonucu\n");
+	printf("5-Dikdortgende alan ve cevre hesabi\n");
+	printf("Isleminizi secin: ");
+	scanf("%d",&secim);
+	
+	switch(secim)
+	{
+		case 1: 
+		    printf("Karenin alani: %d\n",(sayi1*sayi1));
+		    printf("Karenin cevresi: %d",(sayi1*4));
+		break;
+		case 2:
+		    printf("Sayinin kupu: %d",(sayi1*sayi1*sayi1));
+		break;
+		case 3: 
+		    printf("Cemberin alani: %d\n", (pi*sayi1*sayi1));	
+			printf("Cemberin cevresi: %d",(2*pi*sayi1));  
+		break; 
+		case 4: 
+		    printf("x sayisini giriniz: ");
+		    scanf("%d",&girdi);
+		    printf("5x2+7x+9= %d");
+		break;
+		    
+		case 5:
+			printf("Dikdortgenin alani: %d\n",(sayi1*sayi2));
+			printf("Dikdortgenin cevresi: %d",(sayi1*2+sayi2*2));
+		break;
+		
+	}
+	
+	
+	return 0;
+}
