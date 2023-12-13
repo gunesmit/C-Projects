@@ -9,18 +9,15 @@ int main() {
 	
 	for(i=1;i<=3;i++)
 	{
-	
-	printf("Sehir Giriniz: \n",i+1);
-	scanf("%s",sehir[i]);
-}
-	
+		printf("Sehir Giriniz: \n",i+1);
+		scanf("%s",sehir[i]);
+        }
+
 	for(i=1;i<=3;i++)
-	{
+
 		printf("Girdiginiz Il: %s\n", sehir[i]);
 		
-		
-	}
-	
+
 	
 	return 0;
 }
